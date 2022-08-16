@@ -31,7 +31,7 @@ namespace Contato
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ContatosContext>(options => options.UseMySql("server=localhost;initial catalog=Contatos;uid=root;pwd=Vinicius23", ServerVersion.Parse("8.0.29-mysql")));
+            services.AddDbContext<ContatosContext>(options => options.UseMySql("server=localhost;initial catalog=Contatos;uid=root;pwd=suasenha", ServerVersion.Parse("8.0.29-mysql")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CRUDAspNetCore5WebAPI", Version = "v1" });
